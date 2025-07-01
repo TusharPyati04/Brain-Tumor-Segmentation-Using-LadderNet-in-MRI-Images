@@ -89,13 +89,13 @@ cd laddernet-brain-tumor-segmentation
 pip install -r requirements.txt
 
 # Preprocess the dataset
-python preprocess.py
+python preprocessing.py
 
 # Train the model
-python train.py
+python ladder_training.py
 
 # Run predictions
-python predict.py
+python ladder_predict.py
 
 ---
 
