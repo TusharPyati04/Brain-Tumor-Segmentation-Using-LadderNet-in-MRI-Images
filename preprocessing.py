@@ -73,9 +73,9 @@ class_names = ["glioma", "meningioma", "notumor", "pituitary"]
 
 # Paths for input and output
 train_input_path = r"./DRIVE/Training"
-train_output_path = r"D:/COLLEGE/MLDL/Project/codes2/Preprocessed_Training"
+train_output_path = "Preprocessed_Training"
 test_input_path = r"./DRIVE/Testing"
-test_output_path = r"D:/COLLEGE/MLDL/Project/codes2/Preprocessed_Testing"
+test_output_path = r"Preprocessed_Testing"
 
 # Preprocess and save training and testing datasets
 preprocess_and_save(train_input_path, train_output_path, train_transform, class_names)

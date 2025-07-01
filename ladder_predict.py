@@ -15,7 +15,7 @@ device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 # Load test dataset
 test_dataset = datasets.ImageFolder(
-    root="D:\\COLLEGE\\5th_SEM\\MLDL\\Project\\codes2\\Preprocessed_Testing",
+    root="Preprocessed_Testing",
     transform=transforms.Compose([
         transforms.ToTensor(),
         transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
@@ -26,7 +26,7 @@ test_loader = DataLoader(test_dataset, batch_size=64, shuffle=False)
 # Load trained model
 num_classes = 4
 model = LadderNetv6(layers=3, filters=16, num_classes=num_classes, inplanes=3).to(device)
-model.load_state_dict(torch.load("D:\\COLLEGE\\5th_SEM\\MLDL\\Project\\codes2\\best_laddernet_model_v6.pth"))
+model.load_state_dict(torch.load("best_laddernet_model_v6.pth"))
 model.eval()
 
 # Initialize lists for storing results

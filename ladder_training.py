@@ -50,7 +50,7 @@ def train_model(model, train_loader, test_loader, criterion, optimizer, num_epoc
 
 # Load preprocessed datasets
 train_dataset = datasets.ImageFolder(
-    root="D:/COLLEGE/MLDL/Project/codes2/Preprocessed_Training",
+    root="Preprocessed_Training",
     transform=transforms.Compose([
         transforms.ToTensor(),
         transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
@@ -58,7 +58,7 @@ train_dataset = datasets.ImageFolder(
 )
 
 test_dataset = datasets.ImageFolder(
-    root="D:/COLLEGE/MLDL/Project/codes2/Preprocessed_Testing",  
+    root="Preprocessed_Testing",  
     transform=transforms.Compose([
         transforms.ToTensor(),
         transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
