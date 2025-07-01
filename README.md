@@ -4,11 +4,8 @@ A deep learning-based segmentation model that leverages the LadderNet architectu
 
 ## Overview
 
-This project applies the LadderNet model for accurate brain tumor segmentation using MRI images. The model addresses common challenges in medical imaging like precise tumor localization, limited dataset sizes, and the need for multi-path information flow.
+This project applies the LadderNet model for accurate brain tumor segmentation in MRI images. LadderNet builds upon the U-Net architecture by introducing multiple encoder-decoder paths and extensive skip connections, enabling better feature extraction and improved segmentation accuracy. It effectively handles challenges like limited medical data, poor tumor localization, and variability in tumor appearance. Trained on a labeled Kaggle dataset, the model achieves strong results with a mean accuracy of 90.82% and a ROC AUC of 95.04%, making it suitable for real-world medical image analysis.
 
-## Motivation
-
-Accurate tumor segmentation is vital for diagnosis and treatment planning. Traditional models struggle with segmentation precision and capturing multiscale contextual information. LadderNet, with its multi-U-Net structure and extensive skip connections, offers a robust solution.
 
 ---
 
@@ -71,6 +68,15 @@ Accurate tumor segmentation is vital for diagnosis and treatment planning. Tradi
 📌 *Note: Visual outputs include confusion matrix, ROC, and precision-recall plots.*
 
 ---
+## Contributors
+
+- **Vineet Desai** 
+- **Tushar Pyati** 
+- **K L Bhargava Prasad** 
+
+ 
+**School of Electronics and Communication Engineering**  
+**KLE Technological University, Hubballi**
 
 ##  How to Run
 
